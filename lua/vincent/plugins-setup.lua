@@ -21,8 +21,10 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-
   -- My plugins here
+  
+  -- lua functions that many plugins use
+  use 'nvim-lua/plenary.nvim'
   
   -- preferred colorscheme
   use 'bluz71/vim-nightfly-guicolors'
@@ -31,6 +33,19 @@ return require('packer').startup(function(use)
   use 'christoomey/vim-tmux-navigator'
 
   use 'szw/vim-maximizer'
+
+  -- file explorer
+  use 'nvim-tree/nvim-tree.lua'
+
+  -- icons
+  use 'kyazdani42/nvim-web-devicons'
+
+  -- statusline
+  use 'nvim-lualine/lualine.nvim'
+
+  -- fuzzy finding
+  use ({"nvim-telescope/telescope-fzf-native.nvim", run = "make" })
+  use ({"nvim-telescope/telescope.nvim", branch = "0.1.x" })
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
