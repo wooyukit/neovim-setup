@@ -201,6 +201,11 @@ _G.packer_plugins = {
     path = "/Users/wooyukit/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["typescript.nvim"] = {
+    loaded = true,
+    path = "/Users/wooyukit/.local/share/nvim/site/pack/packer/start/typescript.nvim",
+    url = "https://github.com/jose-elias-alvarez/typescript.nvim"
+  },
   ["vim-maximizer"] = {
     loaded = true,
     path = "/Users/wooyukit/.local/share/nvim/site/pack/packer/start/vim-maximizer",
